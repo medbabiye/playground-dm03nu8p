@@ -26,8 +26,8 @@ class Student(){
         arrList.add(MyDataClass("Mohamed Ahmed Saleh", 16.5))
         arrList.add(MyDataClass("Babe Haimeddat", 13.0))
         arrList.add(MyDataClass("Brahim Bousebat", 18.5))
-        arrList.add(MyDataClass("Imran ElKaa", 10))
-        arrList.add(MyDataClass("Haitam Mintaki", 15))
+        arrList.add(MyDataClass("Imran ElKaa", 10.9))
+        arrList.add(MyDataClass("Haitam Mintaki", 15.0))
         arrList.add(MyDataClass("Elhili Abdoullatif", 12.5))
         arrList.add(MyDataClass("Chaimaa Wahoudi", 11))
 
