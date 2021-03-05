@@ -25,7 +25,7 @@ class Student(){
         fun getNote(studentName:String):Double{
             var noteStudent:Double = 0.0
             for(i in 0 until names.size){
-                if(names.contains(studentName)){
+                if(names[i] == studentName){
                    noteStudent = notes[i] 
                 }
             } 
