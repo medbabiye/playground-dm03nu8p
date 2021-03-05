@@ -26,9 +26,7 @@ class Student(){
             for(i in 0 until names.size){
                 if(names.contains(studentName)){
                     return notes[i] 
-                } else{
-                        return 0.0 
-                    }
+                } else { return 0.0  }
             }  
         }
 }
