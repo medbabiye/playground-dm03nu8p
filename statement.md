@@ -14,14 +14,12 @@ fun main(args: Array<String>) {
         }else {
             println("your note is $note")
         }
-
-
 }
 ```
 data class MyDataClass(var name:String , var note:Double)
 class Student(){
 
-var arrList = ArrayList<MyDataClass>()
+        var arrList = ArrayList<MyDataClass>()
         arrList.add(MyDataClass("Mohamed Ahmed Saleh",16.5))
         arrList.add(MyDataClass("Babe Haimeddat",13.0))
         arrList.add(MyDataClass("Brahim Bousebat",18.5f))
@@ -33,9 +31,6 @@ var arrList = ArrayList<MyDataClass>()
         fun getNote(studentName:String):Double{
             for(i in arrList){
                 if(i.name == studentName) return i.note else return 0.0
-
-            }
-
-            
+            }  
         }
 }
