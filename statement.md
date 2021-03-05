@@ -16,17 +16,17 @@ fun main(args: Array<String>) {
         }
 }
 ```
-data class MyDataClass(var name:String , var note:Double)
+data class MyDataClass(var name:String =" " , var note:Double = 2.0)
 class Student(){
-
         var arrList = ArrayList<MyDataClass>()
-        arrList.add(MyDataClass("Mohamed Ahmed Saleh",16.5))
-        arrList.add(MyDataClass("Babe Haimeddat",13.0))
-        arrList.add(MyDataClass("Brahim Bousebat",18.5f))
-        arrList.add(MyDataClass("Imran ElKaa",10))
-        arrList.add(MyDataClass("Haitam Mintaki",15))
-        arrList.add(MyDataClass("Elhili Abdoullatif",12.5))
-        arrList.add(MyDataClass("Chaimaa Wahoudi",11))
+        
+        arrList.add(MyDataClass("Mohamed Ahmed Saleh", 16.5))
+        arrList.add(MyDataClass("Babe Haimeddat", 13.0))
+        arrList.add(MyDataClass("Brahim Bousebat", 18.5))
+        arrList.add(MyDataClass("Imran ElKaa", 10))
+        arrList.add(MyDataClass("Haitam Mintaki", 15))
+        arrList.add(MyDataClass("Elhili Abdoullatif", 12.5))
+        arrList.add(MyDataClass("Chaimaa Wahoudi", 11))
 
         fun getNote(studentName:String):Double{
             for(i in arrList){
