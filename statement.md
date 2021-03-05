@@ -27,6 +27,7 @@ class Student(){
             for(i in 0 until names.size){
                 if(names[i] == studentName){
                    noteStudent = notes[i] 
+                   break
                 }
             } 
             return noteStudent  
