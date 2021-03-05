@@ -14,8 +14,8 @@ fun main(args: Array<String>) {
         }else {
             println("your note is $note")
         }
+
 }
-```
 data class MyDataClass(var name:String =" " , var note:Double = 2.0)
 class Student(){
         var arrList = ArrayList<MyDataClass>()
@@ -34,3 +34,4 @@ class Student(){
             }  
         }
 }
+```
