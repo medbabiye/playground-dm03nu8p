@@ -5,6 +5,7 @@ This Kotlin template lets you get started quickly with a simple one-page playgro
 ```kotlin runnable
 fun main(args: Array<String>) {
 
+
     println("Enter your Name :")
     var name:String = readLine()!!.toString()
     val student = Student()
@@ -16,28 +17,22 @@ fun main(args: Array<String>) {
         }
 
 }
-data class MyDataClass(name:String , note:Double){
-    var studenta_Name = name
-    val student_Note = note
-}
+
 class Student(){
-        var arrList = ArrayList<MyDataClass>()
+       
+        var names = arrayOf("Mohamed Ahmed Saleh","Babe Haimeddat","Brahim Bousebat","Imran ElKaa","Haitam Mintaki","Elhili Abdoullatif","Chaimaa Wahoudi")
+        var notes = arrayOf(16.5,13.0, 18.5, 10.0, 15.0, 12.5, 11.5)
+       
         
-        arrList.add(MyDataClass("Mohamed Ahmed Saleh", 16.5))
-        arrList.add(MyDataClass("Babe Haimeddat", 13.0))
-        arrList.add(MyDataClass("Brahim Bousebat", 18.5))
-        arrList.add(MyDataClass("Imran ElKaa", 10.9))
-        arrList.add(MyDataClass("Haitam Mintaki", 15.0))
-        arrList.add(MyDataClass("Elhili Abdoullatif", 12.5))
-        arrList.add(MyDataClass("Chaimaa Wahoudi", 11))
 
         fun getNote(studentName:String):Double{
-            for(i in arrList){
-                if(i.name == studentName){
-                    return i.note 
+            for(i in names.size-1){
+                if(names.contains(studentName)){
+                    return notes[i] 
                     } else{
                         return 0.0 }
             }  
         }
 }
+
 ```
