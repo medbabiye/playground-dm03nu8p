@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
 
     println("Enter your Name :")
-    var name:String = "Mohamed Ahmed Saleh"
+    var name = "Mohamed Ahmed Saleh"
     val student = Student()
     val note = student.getNote(name)
     if(note == 0.0) { 
