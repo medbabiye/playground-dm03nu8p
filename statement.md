@@ -30,7 +30,10 @@ class Student(){
 
         fun getNote(studentName:String):Double{
             for(i in arrList){
-                if(i.name == studentName) return i.note else return 0.0
+                if(i.name == studentName){
+                    return i.note 
+                    } else{
+                        return 0.0 }
             }  
         }
 }
