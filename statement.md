@@ -16,7 +16,10 @@ fun main(args: Array<String>) {
         }
 
 }
-data class MyDataClass(var name:String =" " , var note:Double = 2.0)
+data class MyDataClass(name:String , note:Double){
+    var studenta_Name = name
+    val student_Note = note
+}
 class Student(){
         var arrList = ArrayList<MyDataClass>()
         
